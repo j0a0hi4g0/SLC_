@@ -1,0 +1,19 @@
+
+{% extends "aplicacao/layout.html" %}
+
+{% block body %}
+
+
+<h1>ID do item: {{ aplicacao.id }}</h1>
+<ul>
+    <li>Lista: {{ aplicacao.lista }} </li>
+    <li>produto: {{ aplicacao.compra }}</li>
+    <li>preço: {{ aplicacao.preco }} </li>
+
+</ul>
+
+
+
+<a href="{% url 'index' %}">voltar para a pagina inicial</a>
+
+{% endblock %}
